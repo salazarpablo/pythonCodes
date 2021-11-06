@@ -1,0 +1,20 @@
+{
+    "Usage":[
+        {
+            "country":"Mexico",    
+            "use":"True",
+            "Description":"ifneeded1"
+            },
+        {
+            "country":"Hungary",        
+            "use":"True",
+            "Description":"ifneeded2"
+            },
+        {
+            "country":"Canada",        
+            "use":"True",
+            "Description":"ifneeded2"
+        }
+        ]
+}
+
