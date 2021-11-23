@@ -19,23 +19,36 @@ results = [n + 1 for n in numbers]
 print(results)
 
 lista = []
-for letra in 'palabra':
+for letra in 'palabra nueva':
     lista.append(letra)
 print(lista)
 
-lista = [letra for letra in 'palabra']
+lista = [letra for letra in 'palabra nueva']
 print(lista)
 
 names = ['Ch','Dh','Eh','cb','Tb','Td','Chb','Tdb']
 final_names = [name for name in names if name.lower().endswith('b') and len(name) > 2]
 print(final_names)
 
+final_names = []
+for name in names:
+    if name.lower().endswith('b') and len(name) > 2:
+        final_names.append(name)
+print(final_names)
+
+
+numbers = [1, 2, 3, 4]
+
 list_of_tuples = [(n, n*n) for n in numbers]
 print(list_of_tuples)
 
+lt = []
+for n in numbers:
+    lt.append((n,n*n))
+print(lt)
+
 names_1 = ['Oralie' ,'Imojean' ,'Michele', 'Ailbert', 'Stevy']
 names_2 = ['Jayson', 'Oralie' ,'Michele', 'Stevy', 'Alwyn']
-
 
 common = []
 for a in names_1:
@@ -82,7 +95,7 @@ print(lista)
 
 #[f(x) if condition else g(x) for x in list]
 
-my_list = ['Ali','Mark', None, 'Sara', None, 'Rahul']
+my_list = ['Ali     ','        Mark', None, 'Sara', None, 'Rahul']
 
 new_list = [str(x.strip()) if x is not None else '' for x in my_list]
 print(new_list)
@@ -91,6 +104,16 @@ my_list = ['Ali','Mark', None, 'Sara', None, 'Rahul']
 
 new_list = [x.upper() if x is not None else '' for x in my_list]
 print(new_list)
+
+my_list2 = []
+for elemento in my_list:
+    if elemento is not None:
+        my_list2.append(elemento.upper())
+        print(elemento)
+    else:
+        my_list2.append("")
+        print("")
+print(my_list2)
 
 points = []
 for x in range(0, 5 + 1):
@@ -103,11 +126,11 @@ print(points)
 
 #map(function, iterable[, iterable1, iterable2,..., iterableN])
 
-letters = list(map(lambda y: y, 'analytics'))
-print(letters)
-
 doubles = {n: n * 2 for n in range(1, 11)}
 print(doubles)
+
+letters = list(map(lambda y: y, 'analytics'))
+print(letters)
 
 # Return double 
 def addition(n):
@@ -120,6 +143,10 @@ print(list(result))
 numbers = (1, 2, 3, 4)
 result = map(lambda x: x + x, numbers)
 print(list(result))
+print(type(result))
+result = list(map(lambda x: x + x, numbers)) ### Equivalente en lista comprensiva ...
+print(result)
+print(type(result))
 
 numbers1 = [1, 2, 3]
 numbers2 = [4, 5, 6]
