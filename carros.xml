@@ -1,0 +1,17 @@
+<carros>
+<carro categoria="pickup">
+    <dispositivo> Nissan </dispositivo>
+    <numserie> u2h34u859ole </numserie>
+    <owner name="pedro">yo</owner>
+</carro>
+<carro categoria="compacto">
+    <dispositivo> Dispositivo Dos </dispositivo>
+    <numserie> ipoi54i464o </numserie>
+    <owner name="salvador"> yo dos </owner>
+</carro>
+<carro categoria="suv">
+    <dispositivo> Dispositivo Tres </dispositivo>
+    <numserie> 1234125454dgf </numserie>
+    <owner name="equis" otro="equis"> yo tres</owner>
+</carro>
+</carros>
